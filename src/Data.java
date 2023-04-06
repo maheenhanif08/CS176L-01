@@ -33,7 +33,6 @@ public class Data
       {
          return 0;
       }
-      //Measurable max = objects[0];
       double max = 0;
       for (Measurable obj : objects)
       {
@@ -42,7 +41,18 @@ public class Data
             max = obj.getMeasure();
          }
       }
-
       return max;
    }
+   
+   public static double min(Measurable[] objects) {
+	   double min = Integer.MAX_VALUE;
+	   for(Measurable obj : objects) {
+		   if(obj.getMeasure() < min) {
+			   min = obj.getMeasure();
+		   }
+	   }
+	   return min;
+   }
+
 }
+

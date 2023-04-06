@@ -7,11 +7,8 @@ public class Quiz implements Measurable {
 		this.score = score;
 	}
 	
-	
-	
 	@Override
 	public double getMeasure() {
-		// TODO Auto-generated method stub
 		return score;
 	}
 
